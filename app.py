@@ -111,4 +111,5 @@ api.add_resource(Student_Record, '/students')
 api.add_resource(One_student_record, '/students/<Matric_No>')
 
 if __name__ == "__main__":
+    db.create_all()
     app.run(debug= True)
