@@ -55,7 +55,7 @@ class Student_Record(Resource):
     def get(self):
         all_students = Student_Data.query.all()
         result = students_schema.dump(all_students)
-        return jsonify(result)
+        return jsonify(students = result)
             
     # Create new student record
     def post(self):
